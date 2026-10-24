@@ -38,3 +38,6 @@ coverage.out
 /tmp/
 # extension-v2: written from extension/manifest.src.json for loading the folder unpacked
 /extension/manifest.json
+
+# Local temp files (fork)
+/.tmp/

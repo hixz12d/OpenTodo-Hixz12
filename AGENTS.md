@@ -35,3 +35,33 @@ Open-source, self-hosted, local-first task manager that replaces subscription ta
 - Dates: `due` is a floating `{date: "YYYY-MM-DD", time?: "HH:MM"}`; timestamps are Unix milliseconds.
 - Priority: 1 = highest … 4 = default/lowest.
 - Deletion is a tombstone (`deleted_at`); lists filter it out, export includes it.
+
+## Fork（hixz12d）专属规则：优先于上文
+
+本仓库是用户 `hixz12d` 的 fork，跑在用户自己的 VPS 上，与原版保持可合并。
+
+### 开工必读
+
+- fork 的产品说明与中文术语表：`fork/PRODUCT.md`
+- fork 改动涉及的代码位置、基本检查命令：`fork/ARCHITECTURE.md`
+- 部署、上线、同步原版：`fork/RUNBOOK.md`（涉及部署时必读）
+- 进行中的计划：`fork/plans/`；fork 更新日志：`fork/CHANGELOG.md`
+
+### 工程约定
+
+- fork 的文档和计划只放 `fork/`，**不放 `docs/`**：`docs/` 是上游用户手册，会被构建进应用的帮助页，`docs:check` 会逐个检查其中的 `.md`；另外 Windows 文件名不分大小写，`docs/ARCHITECTURE.md` 会与上游 `docs/architecture.md` 冲突。/flow 系列命令里的 `docs/PRODUCT.md`、`docs/ARCHITECTURE.md`、`docs/RUNBOOK.md`、`docs/plans/`、`CHANGELOG.md` 在本仓库分别对应 `fork/` 下的同名文件。
+- 尽量不改上游已有文件：优先新增文件；必须改的登记处（如 `web/src/locales/index.ts`）只做最小改动。不改上游的 `README.md`、`CHANGELOG.md`、`CLAUDE.md`、`docs/`。
+- 上文 Non-negotiables 中 "Specs before behavior"（OpenSpec）只约束改行为的代码；纯翻译、文案不需要建 OpenSpec change。改行为时照上文执行。
+- 不写测试、不跑测试套件；改完跑 `fork/ARCHITECTURE.md` 的基本检查。
+- 计划执行：按 `fork/plans/<计划>/part-*.md` 执行，只改该 Part 列出的文件；开工把状态改成"进行中"，完成改成"已完成"并填写完成记录；执行 Part 时不改 `fork/` 核心文档和 CHANGELOG，不提交 git。
+- 临时文件放 `.tmp/`（已被 git 忽略），任务结束前删除。
+- git：只在上线时统一提交并推送到 `origin`（用户 fork），提交说明用中文；不向上游提 PR，除非用户要求。
+
+### 汉化规则
+
+- 中文翻译写在 `web/src/locales/zh.json`，用词以 `fork/PRODUCT.md` 术语表为准；保留原文的每个占位符、标签和复数参数，中文复数只用 `other`。
+- 用户数据（任务标题、项目名）、筛选语法和重复规则关键词不翻译（见 `docs/translating.md`）。
+
+### 沟通
+
+- 用简体中文，面向非代码专业用户：先给结论，说人话，术语第一次出现时顺带解释。
