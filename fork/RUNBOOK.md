@@ -15,5 +15,5 @@
 
 ## git 远端
 
-- `origin`：`https://github.com/hixz12d/OpenTodo-Hixz12`（用户 fork，上线从这里构建）。
+- `origin`：`https://github.com/hixz12d/OpenTodo-Hixz12`（用户 fork，上线从这里构建）。fork 的 GitHub Actions 已关闭（继承自上游的 CI、夜间构建和镜像发布任务，自用不需要），推送不会触发任何任务。
 - 同步原版更新：`git remote add upstream https://github.com/pixari/opentodo`（首次），然后 `git fetch upstream && git merge upstream/main`。fork 改动集中在新增文件，合并冲突主要可能出现在 `web/src/locales/index.ts`、`web/public/push-sw.js` 等登记处；合并后新增的英文条目需补译（`node scripts/i18n-check.mjs` 会列出）。

@@ -1,0 +1,219 @@
+{
+  "extName": {
+    "message": "OpenTodo Capture"
+  },
+  "extDescription": {
+    "message": "通过一个小弹窗，把当前页面、链接、图片、邮件或选中的文字添加到你自己的 OpenTodo 服务器。它只与你填写的服务器地址通信。"
+  },
+  "actionTitle": {
+    "message": "添加到 OpenTodo"
+  },
+  "commandDescription": {
+    "message": "把当前页面添加到 OpenTodo"
+  },
+  "menuScreenshot": {
+    "message": "把截图添加到 OpenTodo"
+  },
+  "optionsTitle": {
+    "message": "OpenTodo Capture 设置"
+  },
+  "optionsIntro": {
+    "message": "填写你的 OpenTodo 服务器地址。扩展只保存这个地址，以及在“快速保存”模式下你在下方粘贴的令牌；它不与其他任何地址通信。"
+  },
+  "pendingNote": {
+    "message": "设置好服务器后，即可继续添加“$TITLE$”。",
+    "placeholders": {
+      "title": {
+        "content": "$1",
+        "example": "Example page"
+      }
+    }
+  },
+  "thisPage": {
+    "message": "此页面"
+  },
+  "serverLabel": {
+    "message": "服务器地址"
+  },
+  "save": {
+    "message": "保存"
+  },
+  "screenshotsHeading": {
+    "message": "截图"
+  },
+  "screenshotsIntro": {
+    "message": "“把截图添加到 OpenTodo”会截取页面的可见部分，并把图片交给你服务器的收集弹窗；在你按下“保存”之前不会保存任何内容。交接图片需要访问你的服务器地址，且只访问这一个地址；保存地址时浏览器会询问你。"
+  },
+  "screenshotsAllowed": {
+    "message": "截图：已允许 $ORIGIN$。",
+    "placeholders": {
+      "origin": {
+        "content": "$1",
+        "example": "https://todo.example.com"
+      }
+    }
+  },
+  "screenshotsNotAllowed": {
+    "message": "截图：尚未允许。扩展需要访问你的服务器，仅用于把截图交给收集弹窗。"
+  },
+  "allowScreenshots": {
+    "message": "允许截图"
+  },
+  "invalidAddress": {
+    "message": "请填写以 http:// 或 https:// 开头的地址，例如 https://todo.example.com"
+  },
+  "saved": {
+    "message": "已保存。收集的内容会发送到 $ORIGIN$。",
+    "placeholders": {
+      "origin": {
+        "content": "$1",
+        "example": "https://todo.example.com"
+      }
+    }
+  },
+  "popupLine": {
+    "message": "任务"
+  },
+  "popupProject": {
+    "message": "项目"
+  },
+  "popupInbox": {
+    "message": "收件箱"
+  },
+  "popupLabels": {
+    "message": "标签"
+  },
+  "popupAddLabel": {
+    "message": "添加标签"
+  },
+  "popupRemoveLabel": {
+    "message": "移除标签 $NAME$",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "call"
+      }
+    }
+  },
+  "popupOrigin": {
+    "message": "来源"
+  },
+  "popupRemoveOrigin": {
+    "message": "移除链接"
+  },
+  "popupOptions": {
+    "message": "设置"
+  },
+  "popupOpenCapture": {
+    "message": "打开收集页面"
+  },
+  "popupSaving": {
+    "message": "正在保存…"
+  },
+  "popupSaved": {
+    "message": "已保存"
+  },
+  "popupOpenTask": {
+    "message": "打开任务"
+  },
+  "popupUnreachable": {
+    "message": "无法连接服务器。你输入的文字还在这里。"
+  },
+  "popupTokenRefused": {
+    "message": "令牌已失效。请在设置中检查。"
+  },
+  "popupEncrypted": {
+    "message": "此账户已启用端到端加密：请在收集页面保存，它会在你的设备上加密。"
+  },
+  "popupRateLimited": {
+    "message": "请求过多。请一分钟后再试。"
+  },
+  "popupFailed": {
+    "message": "任务保存失败：$MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1",
+        "example": "title: required"
+      }
+    }
+  },
+  "popupNoServer": {
+    "message": "请先在设置中填写服务器地址；点“保存”会带你过去。"
+  },
+  "modeHeading": {
+    "message": "“保存”的工作方式"
+  },
+  "modeCapture": {
+    "message": "收集页面"
+  },
+  "modeCaptureHelp": {
+    "message": "“保存”会打开你服务器的收集页面，你在那里检查任务后再保存。扩展不持有令牌，自己也不发送任何内容。"
+  },
+  "modeQuick": {
+    "message": "快速保存"
+  },
+  "modeQuickHelp": {
+    "message": "“保存”会用下方的令牌，通过你服务器的 API 立即创建任务。扩展会把这一行、选中的文字和页面地址发送到你的服务器，不发给其他任何人。"
+  },
+  "modeNeedsToken": {
+    "message": "快速保存需要一个完全访问令牌：在此之前，“保存”会打开收集页面。"
+  },
+  "tokenLabel": {
+    "message": "API 令牌"
+  },
+  "tokenHelp": {
+    "message": "在 OpenTodo 的 设置 → 集成 → API 令牌 中创建一个完全访问令牌，并以这个浏览器命名，方便以后单独撤销。令牌只保存在这台设备上，浏览器不会同步它。"
+  },
+  "tokenSave": {
+    "message": "检查并保存令牌"
+  },
+  "tokenForget": {
+    "message": "清除令牌"
+  },
+  "tokenForgotten": {
+    "message": "已从此浏览器中移除令牌。"
+  },
+  "tokenChecking": {
+    "message": "正在检查令牌…"
+  },
+  "tokenOk": {
+    "message": "$NAME$ 的令牌（$SCOPE$）：快速保存已就绪。",
+    "placeholders": {
+      "name": {
+        "content": "$1",
+        "example": "Alex"
+      },
+      "scope": {
+        "content": "$2",
+        "example": "full"
+      }
+    }
+  },
+  "tokenRead": {
+    "message": "这是只读令牌，只能预览，不能保存：“保存”仍会打开收集页面。"
+  },
+  "tokenAgent": {
+    "message": "这个令牌供 AI 助手使用，不能在这里保存；请改为创建一个完全访问令牌。"
+  },
+  "tokenRejected": {
+    "message": "服务器拒绝了该令牌：$MESSAGE$",
+    "placeholders": {
+      "message": {
+        "content": "$1",
+        "example": "authentication required"
+      }
+    }
+  },
+  "tokenUnreachable": {
+    "message": "无法连接服务器。"
+  },
+  "tokenNoServer": {
+    "message": "请先保存服务器地址。"
+  },
+  "tokenHttp": {
+    "message": "令牌只通过 https 传输。请使用 https 地址（或 localhost）；收集页面不受影响。"
+  },
+  "tokenAccess": {
+    "message": "快速保存需要访问你的服务器地址，但浏览器没有授权。"
+  }
+}
